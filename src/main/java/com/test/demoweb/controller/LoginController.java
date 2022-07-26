@@ -34,18 +34,13 @@ public class LoginController {
     }
 
 
-
-
     /*@PostMapping("login")
     public Login getLogin(){
         Login login= new Login();
         return login;
     }*/
 
-
     /*public RespLogin login(@RequestBody AccessLogin request){
     }*/
-
-
 
 }
