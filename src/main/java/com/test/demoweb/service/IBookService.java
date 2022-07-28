@@ -1,4 +1,4 @@
-package com.test.demoweb.services;
+package com.test.demoweb.service;
 
 import com.test.demoweb.dto.BasicResponse;
 import com.test.demoweb.dto.Book;

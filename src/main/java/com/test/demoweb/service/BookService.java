@@ -1,20 +1,28 @@
-package com.test.demoweb.services;
+package com.test.demoweb.service;
 
 import com.test.demoweb.dto.BasicResponse;
 import com.test.demoweb.dto.Book;
+import com.test.demoweb.repository.BookModel;
+import com.test.demoweb.repository.BookRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Service
 public class BookService implements IBookService{
 
+    @Autowired
+    private BookRepository bookRepository;
+
     @Override
     public List<Book> getListBooks() throws Exception {
+        //List<BookModel> booksModels = bookRepository.findAll();
+        //System.out.println(booksModels);
         List<Book> books = getBooks();
         return books;
     }
@@ -90,6 +98,8 @@ public class BookService implements IBookService{
         ms.setMessage("Libro borrado");
         return ms;
     }
+
+
 
     private List<Book> getBooks(){
         List<Book> books = new ArrayList<>();

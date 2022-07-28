@@ -16,7 +16,9 @@ public class User {
     }
 
     public void setId(Integer id) {
-        this.id = id;
+
+        this.id
+                = id;
     }
 
     public String getName() {
@@ -24,7 +26,9 @@ public class User {
     }
 
     public void setName(String name) {
-        this.name = name;
+
+        this.name
+                = name;
     }
 
     public String getLast_name() {
@@ -40,7 +44,9 @@ public class User {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+
+        this.email
+                = email;
     }
 
     public String getPassword() {
@@ -66,4 +72,5 @@ public class User {
     public void setAddress(String address) {
         this.address = address;
     }
+
 }

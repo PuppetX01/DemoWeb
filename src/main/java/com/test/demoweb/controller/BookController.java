@@ -2,7 +2,7 @@ package com.test.demoweb.controller;
 
 import com.test.demoweb.dto.BasicResponse;
 import com.test.demoweb.dto.Book;
-import com.test.demoweb.services.BookService;
+import com.test.demoweb.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

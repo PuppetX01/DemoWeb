@@ -3,12 +3,20 @@ package com.test.demoweb.controller;
 import com.test.demoweb.dto.Login;
 import com.test.demoweb.dto.User;
 import com.test.demoweb.dto.UserLogin;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-@RestController
 public class LoginController {
+
+    /*private User;
+
+    @RequestMapping(value="/saveUser",method=RequestMethod.POST)
+    public Boolean saveUser(@RequestBody User u) {
+        return userService.saveUser(u);
+    }
+*/
 
     @GetMapping("/login")
     public String Login()
