@@ -30,5 +30,4 @@ public class BookModel {
     @Column(name = "image")
     private String image;
 
-
 }
